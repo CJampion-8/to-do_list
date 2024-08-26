@@ -1,0 +1,137 @@
+body {
+  background-image: url("./src/light_background.jpeg");
+  background-size: repeat;
+}
+
+.taskUser {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 25px;
+  border-radius: 5px;
+  font-family: "Zilla Slab", serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 35px;
+  color: rgb(19, 19, 19);
+}
+
+.changeThemeButton {
+  margin-right: 48px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+}
+
+#container {
+  background: rgba(255, 255, 255,.85);
+  text-align: left;
+  padding: 15px;
+  font-family: "Zilla Slab", serif;
+  font-style: normal;
+  color: rgb(19, 19, 19);
+  width: 50%;
+  margin: auto auto;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin: 0px 20px 20px;
+  background: rgba(169, 225, 250, 0.356);
+  filter: drop-shadow(0px 0px 10px rgb(169, 195, 250));
+}
+
+#task-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  background: transparent;
+
+  font-size: 20px;
+  font-family: "Zilla Slab", serif;
+}
+
+#task-input::placeholder {
+  color: rgba(110, 124, 134, .5);
+}
+
+.addTaskButton {
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  border-radius: 10px;
+  background: transparent;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.removeTaskIcon {
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  visibility: hidden;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 30px 35px 0px 0px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+.date {
+  font-size: 15px;
+  color: rgba(110, 124, 134, .5);
+
+}
+
+ul li:hover {
+  background: rgba(169, 225, 250, 0.356);
+  filter: drop-shadow(0px 0px 10px rgb(169, 195, 250));
+}
+
+ul li::before {
+  content: '';
+  background-image: url("./src/pin.png");
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+  margin-right: 15px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  background-image: url('./src/check.png');
+  color: rgba(110, 124, 134, .5);
+}
+
+ul li.checked::before {
+  content: '';
+  background-image: url('./src/check.png');
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+}

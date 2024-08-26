@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <link rel="stylesheet" href="Stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <section id="container">
+                <div class="header">
+                <div id="taskUser" class="taskUser">Your To-Do List</div>
+                <!-- <div id="changeThemeButton" class="changeThemeButton" onclick="checkTheme()"><img src="./src/sun.png" alt="light" height="25px" width="25px"></div> -->
+            </div>
+
+            <div id="input">
+                <div class="row">
+                    <input type="text" id="task-input" placeholder="Add task">
+                    <!-- <input type="date" id="date-input" placeholder="Due date"> -->
+                    <button class="addTaskButton" onclick="addTask()" >+</button>
+            </div>
+
+            <!--Newly created tasks will go here-->
+            <div id="taskList">
+                <ul id="tasks">
+                </ul>
+            </div>
+        </section>
+        
+
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
