@@ -1,8 +1,6 @@
 const taskInput = document.getElementById('task-input');
-// const dateInput = document.getElementById('date-input')
 const taskList = document.getElementById('tasks');
 const taskUser = document.getElementById('taskUser'); 
-// let currentTheme = 'light';
 
 // Adding a task
 function addTask() {
@@ -13,20 +11,6 @@ function addTask() {
         const task = document.createElement('li');
         task.innerHTML = taskInput.value;
         taskList.appendChild(task);
-
-        // if (dateInput.value !== '') {
-        //     const date = new Date(dateInput.value);
-        //     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        //     const month = monthNames[date.getMonth()];
-        //     const day = date.getDate();
-        //     const year = date.getFullYear();
-        //     const dateString = month + ' ' + day + ', ' + year;
-
-        //     const dateSpan = document.createElement('span');
-        //     dateSpan.className = 'date';
-        //     dateSpan.innerHTML = dateString;
-        //     task.appendChild(dateSpan);
-        // }
 
         const removeTaskButton = document.createElement('span');
         removeTaskButton.className = 'removeTaskIcon';
@@ -145,13 +129,6 @@ function loadTasks() {
     taskList.innerHTML = localStorage.getItem('storedTasks');
 }
 
-// Watch for a click on the theme button
-// container.addEventListener('click', function(e) {
-//     if (e.target.id === 'changeThemeButton') {
-//         changeTheme();
-//     }
-// });
-
 function checkTheme() {
     let themeIcon = document.getElementById('changeThemeButton');
     let lightIcon = '<img src="./src/sun.png" alt="Light Theme" style="width: 25px; height: 25px;"/>';
@@ -160,37 +137,6 @@ function checkTheme() {
     let containerBackground = document.getElementById('container');
     let headerTextColor = document.getElementById('taskUser');
     let listTextColor = document.getElementById('task-input');
-
-    if (currentTheme === 'light'){ // If light, change to dark.
-        backgroundArt.style.backgroundImage = 'url(./src/dark_background.jpeg)';
-        themeIcon.innerHTML = darkIcon;
-        themeIcon.style.filter = 'invert(1)';
-        containerBackground.style.backgroundColor = 'rgba(26, 26, 26, .85)';
-        containerBackground.style.filter = 'drop-shadow(0px 0px 10px rgb(57, 70, 255))';
-        headerTextColor.style.color = 'white';
-        listTextColor.style.color = 'white';
-        taskList.style.color = 'white'; 
-        taskInput.style.color = 'white';
-
-        currentTheme = 'dark';
-    } else {                       // If dark, change to light.
-        backgroundArt.style.backgroundImage = 'url(./src/light_background.jpeg)';
-        themeIcon.innerHTML = lightIcon;
-        themeIcon.style.filter = 'invert(0)';
-        containerBackground.style.backgroundColor = 'rgba(255, 255, 255, .85)';
-        containerBackground.style.filter = 'drop-shadow(0px 0px 10px rgba(255, 255, 255, 1))';
-        headerTextColor.style.color = 'black';
-        listTextColor.style.color = 'black';
-        taskList.style.color = 'black';
-        
-        // Add colors
-
-        currentTheme = 'light';
-    }   
-    console.log('Theme set to: ' + currentTheme);
-};
-
-
 
 window.addEventListener('load', function() {
     loadName();
