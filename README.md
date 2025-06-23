@@ -2,7 +2,7 @@
 
 A beautiful and interactive to-do list web application built with HTML, CSS, and JavaScript. This project helps users manage their daily tasks with a clean, modern interface. 
 
-## 🌟 Features
+## Features
 
 - **Add Tasks**: Easily add new tasks to your to-do list
 - **Mark Complete**: Click on tasks to mark them as completed
@@ -12,26 +12,21 @@ A beautiful and interactive to-do list web application built with HTML, CSS, and
 - **Responsive Design**: Clean and modern UI with beautiful styling
 - **Visual Feedback**: Smooth hover effects and visual indicators
 
-## 🚀 How to Use
+## How to Use
 
-### Option 1: GitHub Pages (Recommended)
-1. Visit the live website at: `https://cjampion-8.github.io/to-do_list`
-2. Enter your name when prompted
-3. Start adding tasks!
-
-### Option 2: Local Setup
+### Local Setup
 1. Clone or download this repository
 2. Open `index.html` in your web browser
 3. No additional setup required!
 
-## 💻 Technologies Used
+## Technologies Used
 
 - **HTML5**: Structure and content
 - **CSS3**: Styling and responsive design
 - **JavaScript**: Interactive functionality and local storage
 - **Google Fonts**: Zilla Slab font family
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 to-do_list/
@@ -46,7 +41,7 @@ to-do_list/
 └── README.md          # Project documentation
 ```
 
-## 🎨 Features in Detail
+## Features in Detail
 
 ### Task Management
 - **Add**: Type in the input field and press Enter or click the "+" button
@@ -58,7 +53,7 @@ to-do_list/
 - Data persists between browser sessions
 - No server or database required
 
-## 🔧 Customization
+## Customization
 
 Feel free to customize the application:
 - Modify colors in `Stylesheet.css`
@@ -73,7 +68,7 @@ This is a static website that can be hosted on any web server:
 - Firebase Hosting
 - Any traditional web hosting service
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 - Report bugs
